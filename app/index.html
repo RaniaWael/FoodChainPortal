@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="foodChainPortal">
+  <head>
+    <meta charset="utf-8">
+    <title> Chicken FilA Portal </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- STYLING -->
+
+    <!-- External styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Our styling files -->
+    <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/login.css"> -->
+
+    <!-- SCRIPTS -->
+
+    <!-- External scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.4/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.js"></script>
+
+    <!-- Our project's controllers -->
+    <script src="./route.js"></script>
+    <script src="./scripts/controllers/homepage.js"></script>
+    <script src="./scripts/controllers/loginCtrl.js"></script>
+    <script src="./scripts/controllers/registerCtrl.js"></script>
+
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+     <ng-view class="ng-binding ng-scope"></ng-view>
+    <!-- </div> -->
+  </body>
+</html>

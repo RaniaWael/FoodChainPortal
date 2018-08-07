@@ -1,0 +1,30 @@
+{
+  "name": "foodchainportal",
+  "private": true,
+  "author": "Rania Wael",
+  "main": "./app/route.js",
+  "scripts": {
+    "start": "node ./app/scripts/server.js"
+  },
+  "dependencies": {
+    "angular": "latest",
+    "angular-bootstrap": "latest",
+    "angular-cookies": "latest",
+    "angular-mocks": "latest",
+    "angular-resource": "latest",
+    "angular-route": "latest",
+    "angular-ui-router": "latest",
+    "body-parser": "*",
+    "bootstrap": "latest",
+    "dotenv": "*",
+    "express": "^4.16.3",
+    "method-override": "*",
+    "moment": "*",
+    "morgan": "*",
+    "path": "*"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
