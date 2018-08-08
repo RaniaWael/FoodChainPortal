@@ -1,23 +1,24 @@
-//'use strict';
+'use strict';
 
 //'ngResource',
 
-app = angular.module('foodChainPortal', ['ngResource', 'ngRoute']);
+app = angular.module('foodChainPortal', ['ngRoute', 'ngResource']);
 
 app.config(function ($routeProvider) {
+  console.log("hereeee");
     $routeProvider
       .when('/', {
-        templateUrl: '/templates/homepage.html',
+        templateUrl: './templates/homepage.html',
         controller: 'HomepageCtrl',
         controllerAs: 'homepage'
       })
       .when('/login', {
-        templateUrl: '/templates/login.html',
+        templateUrl: './templates/login.html',
         controller: 'LoginCtrl',
         controllerAs: 'login'
       })
       .when('/register', {
-        templateUrl: '/templates/register.html',
+        templateUrl: './templates/register.html',
         controller: 'RegisterCtrl',
         controllerAs: 'register'
       })

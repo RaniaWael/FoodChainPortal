@@ -15,5 +15,5 @@ var bodyParser = require('body-parser');
 //app.use(app.router);
 app.get('*',function(req, res) {
   // Use res.sendfile, as it streams instead of reading the file into memory.
-  res.sendfile('./app/index.html');
+  res.sendfile(path.resolve('app/index.html'));
 }).listen(8080);

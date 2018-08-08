@@ -1,5 +1,5 @@
-<!doctype html>
-<html ng-app="foodChainPortal">
+<!DOCTYPE html>
+<html ng-app>
   <head>
     <meta charset="utf-8">
     <title> Chicken FilA Portal </title>
@@ -18,28 +18,51 @@
     <!-- SCRIPTS -->
 
     <!-- External scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.4/angular-sanitize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.js"></script>
+    <script type="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.js"></script> -->
+    <!-- <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.js"></script> -->
+    <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script type="javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script>
+    <script type="javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-resource.js"></script>
+    <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.6.9/angular-ui-router.min.js"></script>
+    <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.9/angular-sanitize.min.js"></script>
+    <script type="javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script type="javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script type="javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
 
     <!-- Our project's controllers -->
-    <script src="./route.js"></script>
-    <script src="./scripts/controllers/homepage.js"></script>
-    <script src="./scripts/controllers/loginCtrl.js"></script>
-    <script src="./scripts/controllers/registerCtrl.js"></script>
+    <script type="javascript" src="./route.js"></script>
+    <script type="javascript" src="./scripts/controllers/homepage.js"></script>
+    <script type="javascript" src="./scripts/controllers/loginCtrl.js"></script>
+    <script type="javascript" src="./scripts/controllers/registerCtrl.js"></script>
 
   </head>
   <body>
-    <!-- <div class="container"> -->
-     <ng-view class="ng-binding ng-scope"></ng-view>
-    <!-- </div> -->
+    <div class="container">
+     <ng-view> {{ 1 + 2 }} </ng-view>
+    </div>
   </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html ng-app>
+<head>
+  <title> Chicken FilA Portal </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  <script type="javascript" src="./route.js"></script>
+  <script type="javascript" src="./scripts/controllers/homepage.js"></script>
+  <script type="javascript" src="./scripts/controllers/loginCtrl.js"></script>
+  <script type="javascript" src="./scripts/controllers/registerCtrl.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <p> {{ 5 + 5 }} </p>
+</div>
+
+</body>
+</html> -->
