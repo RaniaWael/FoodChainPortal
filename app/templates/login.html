@@ -1,17 +1,34 @@
-<div ng-controller="./scripts/controllers/login.js">
-  <div class="jumbotron ourRed">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="../scripts/controllers/loginCtrl.js"></script>
+
+<div ng-controller="LoginCtrl" class="container col-md-12 bg-dark row h-100 justify-content-center">
+   <div class="d-flex flex-column justify-content-around">
+     <h1 class="text-danger p-2"> LOGIN TO CHICKEN FIL-A PORTAL </h1>
+     <form>
+      <div class="input-group">
+        <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+      </div>
+      <br>
+      <div class="input-group">
+        <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span> -->
+        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+      </div>
+     </form>
+     <button type="button" class="btn btn-outline-danger btn-lg" ng-click="execLogin()">Login</button>
+     <button type="button" class="btn btn-outline-default btn-lg" ng-click="goReg()">Register</button>
+   </div>
+</div>
+
+
+<!-- <div ng-controller="LoginCtrl">
+  <div class="jumbotron">
    <h1>Restaurant Name and Logo</h1>
    <p> Some slogan. </p>
   </div>
-  <form>
-   <div class="input-group">
-     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-     <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-   </div>
-   <br>
-   <div class="input-group">
-     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-     <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-   </div>
-  </form>
-</div>
+
+</div> -->

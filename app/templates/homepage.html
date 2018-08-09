@@ -1,5 +1,17 @@
-<div ng-controller="HomepageCtrl">
-  <!-- <h1> {{ rest_name }} </h1>
-  <h3> {{ slogan }} </h3> -->
-  <h1> {{ name }} </h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="../scripts/controllers/homepage.js"></script>
+
+<div ng-controller="HomepageCtrl" class="container col-md-12 bg-dark row h-100">
+   <img src="../images/chicken-fil-a.jpg" class="img-rounded col-sm-6">
+   <div class="col-sm-6 d-flex flex-column justify-content-around">
+     <h1 class="text-danger p-2"> WELCOME TO CHICKEN FIL-A PORTAL </h1>
+     <button type="button" class="btn btn-outline-default btn-lg" ng-click="goLogin()">Login</button>
+     <button type="button" class="btn btn-outline-danger btn-lg" ng-click="goMenu()">Menu</button>
+   </div>
 </div>
+
+<!-- alt="Cinque Terre" -->

@@ -13,6 +13,7 @@ var bodyParser = require('body-parser');
 // your normal configuration like `app.use(express.bodyParser());` here
 // ...
 //app.use(app.router);
+// require('./route.js')(app);
 app.get('*',function(req, res) {
   // Use res.sendfile, as it streams instead of reading the file into memory.
   res.sendfile(path.resolve('app/index.html'));

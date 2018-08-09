@@ -2,7 +2,7 @@
   "name": "foodchainportal",
   "private": true,
   "author": "Rania Wael",
-  "main": "./app/route.js",
+  "main": "",
   "scripts": {
     "start": "node ./app/scripts/server.js"
   },
