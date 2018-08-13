@@ -1,3 +1,4 @@
+<html ng-app="foodChainPortal">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -6,12 +7,15 @@
 <script src="../scripts/controllers/homepage.js"></script>
 
 <div ng-controller="HomepageCtrl" class="container col-md-12 bg-dark row h-100">
-   <img src="../images/chicken-fil-a.jpg" class="img-rounded col-sm-6">
-   <div class="col-sm-6 d-flex flex-column justify-content-around">
-     <h1 class="text-danger p-2"> WELCOME TO CHICKEN FIL-A PORTAL </h1>
-     <button type="button" class="btn btn-outline-default btn-lg" ng-click="goLogin()">Login</button>
-     <button type="button" class="btn btn-outline-danger btn-lg" ng-click="goMenu()">Menu</button>
+   <img src="../images/chicken-fil-a.jpg" class="img-rounded col-sm-4 h-50">
+   <div class="d-flex col-sm-8 flex-column justify-content-around h-50 align-items-center">
+     <h1 class="text-light p-2"> WELCOME TO CHICKEN FIL-A PORTAL </h1>
+     <div class="col-sm-6 d-flex flex-column justify-content-around">
+       <button type="button" class="btn btn-outline-danger btn-lg" ng-click="goLogin()">Login</button>
+       <br>
+       <button type="button" class="btn btn-outline-default btn-lg" ng-click="goReg()">Register</button>
+     </div>
    </div>
 </div>
-
+</html>
 <!-- alt="Cinque Terre" -->
