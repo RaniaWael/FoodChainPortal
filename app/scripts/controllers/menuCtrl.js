@@ -39,7 +39,7 @@ app.controller("MenuCtrl", function ($scope, $http) {
     return 0;
   };
 
-  $scope.addItem = function(item_id, quantity, type, price) {
+  $scope.addItem = function(item_id, name, quantity, type, price) {
     if(quantity >= 0){
       var newItem = true;
       $scope.order.order_items.some(function(order){
@@ -79,6 +79,7 @@ app.controller("MenuCtrl", function ($scope, $http) {
 
         $scope.priceHelper.push({
           "item_id": item_id,
+          "item_name": name,
           "quantity": quantity,
           "type": type,
           "price": price
@@ -100,6 +101,7 @@ app.controller("MenuCtrl", function ($scope, $http) {
   };
 
   $scope.goCheckout = function(){
-
+    $scope.getTotal();
+    window.location = "./checkout.html?data=" + JSON.stringify($scope.priceHelper) + ", total=" + $scope.total;
   };
 });
