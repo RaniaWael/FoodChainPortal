@@ -2,7 +2,8 @@ var app = angular.module("foodChainPortal", ["ngResource"]);
 
 app.controller("MenuCtrl", function ($scope, $http) {
 
-  $http.defaults.headers.common.Authorization = "Basic cmFuaWFAZ21haWwuY29tOjEyMzQ=";
+  var auth = window.location.search;
+  $http.defaults.headers.common.Authorization = "Basic " + auth.substring(1);
 
   $http.get("http://localhost:8080/chicken-fila/secure/menu").then(function(response){
     $scope.menu = response.data;
