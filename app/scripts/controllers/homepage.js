@@ -8,12 +8,17 @@
 
 
 
-var app = angular.module("foodChainPortal", []);
+var app = angular.module("foodChainPortal", ["ui.router"]);
+
+// app.config(function($stateProvider, $urlRouterProvider) {
+//   $stateProvider.
+// });
+
 app.controller("HomepageCtrl", function ($scope) {
   $scope.goLogin = function() {
 
   };
-  $scope.goMenu = function(){
-    
-  };
+  // $scope.goMenu = function(){
+  //
+  // };
 });
